@@ -20,13 +20,10 @@
 #front-img{
     position:absolute;
     left:0px;
-    width:300px;
-    height:300px;
 }
 
 #status,#status-activate{
     position:relative;
-    top:320px;
 }
 
 
