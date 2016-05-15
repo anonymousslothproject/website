@@ -5,11 +5,11 @@
     right:auto;
 }
 
-#back-img,#front-img{
+#back-img,#front-img,#back-img-activate{
  width:300px;   
 }
 
-#back-img{
+#back-img,#back-img-activate{
     position:relative;
     top:0px;
     left:0px;
@@ -36,10 +36,10 @@
     -webkit-transform: rotate(360deg);
   }
 }
-#back-img
+#back-img-activate
 {
     -webkit-animation-name:             rotate; 
     -webkit-animation-duration:         0.5s; 
-    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-iteration-count:  1;
     -webkit-transition-timing-function: linear;
 }
