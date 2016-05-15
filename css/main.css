@@ -33,13 +33,18 @@
     -webkit-transform: rotate(0deg);
   }
   to { 
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(1080deg);
   }
 }
 #back-img-activate
 {
     -webkit-animation-name:             rotate; 
-    -webkit-animation-duration:         0.5s; 
+    -webkit-animation-duration:         1.5s; 
     -webkit-animation-iteration-count:  1;
     -webkit-transition-timing-function: linear;
+}
+
+#status-activate{
+    -webkit-animation-delay: 1.6s; /* Chrome, Safari, Opera */
+    animation-delay: 1.6s;
 }
