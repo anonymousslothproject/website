@@ -45,7 +45,7 @@
 
 #status-activate{
     -webkit-animation-name:             fadein; 
-    -webkit-animation-duration:         2.5s; 
+    -webkit-animation-duration:         3.5s; 
     -webkit-animation-iteration-count:  1;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
@@ -54,6 +54,7 @@
 
 @-webkit-keyframes fadein {
     0% { opacity: 0; }
-    80% { opacity: 0;}
+    50% { opacity: 0;}
+    60% { opacity: 1;}
     100%   { opacity: 1; }
 }
