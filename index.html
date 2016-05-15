@@ -112,24 +112,26 @@
 -->
 
 
+<div id="container">
 
-<a id="img-container" href="#img-container" onclick="clickFB()">
-  <img id="back-img" src="images/back.png"></img>
-  <img id="front-img" src="images/front.png"></img>
-</a>
-
-<div class="table">
-  <div class="centered">
-    <fb:login-button size="xlarge" scope="public_profile,email" onlogin="checkLoginState();">
-      登陆脸书，参加抽奖！
-    </fb:login-button>
+  <a id="img-container" href="#img-container" onclick="clickFB()">
+    <img id="back-img" src="images/back.png"></img>
+    <img id="front-img" src="images/front.png"></img>
+  </a>
+  
+  <div class="table">
+    <div class="centered">
+      <fb:login-button size="xlarge" scope="public_profile,email" onlogin="checkLoginState();">
+        登陆脸书，参加抽奖！
+      </fb:login-button>
+    </div>
   </div>
+  
+  
+  <div id="status"></div>
+  
+    
 </div>
-
-
-<div id="status"></div>
-
-
 
 
 </body>
