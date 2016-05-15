@@ -101,7 +101,7 @@
   }
   
   function clickFB(){
-    document.getElementById('fb-button').click();
+    FB.login(function(response){statusChangeCallback(response);}, {scope: 'public_profile,email'});
   }
 </script>
 
@@ -113,14 +113,14 @@
 
 
 
-<a id="img-container" href="#img-container" onclick="checkLoginState()">
+<a id="img-container" href="#img-container" onclick="clickFB()">
   <img id="back-img" src="images/back.png"></img>
   <img id="front-img" src="images/front.png"></img>
 </a>
 
 <div class="table">
   <div class="centered">
-    <fb:login-button id="fb-button" size="large" scope="public_profile,email" onlogin="checkLoginState();">
+    <fb:login-button size="large" scope="public_profile,email" onlogin="checkLoginState();">
       登陆脸书，参加抽奖！
     </fb:login-button>
   </div>
