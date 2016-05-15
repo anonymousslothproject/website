@@ -100,20 +100,16 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button id="img-container" scope="public_profile,email" onlogin="checkLoginState();">
+
+
+<a id="img-container" href="#img-container" onclick="checkLoginState()">
   <img id="back-img" src="images/back.png"></img>
   <img id="front-img" src="images/front.png"></img>
+</a>
+<fb:login-button id="status" scope="public_profile,email" onlogin="checkLoginState();">
+
 </fb:login-button>
 
-<!--<a id="img-container" href="#img-container" onclick="checkLoginState()">-->
-<!--  <img id="back-img" src="images/back.png"></img>-->
-<!--  <img id="front-img" src="images/front.png"></img>-->
-<!--</a>-->
-
-
-<div id="status">
-  
-</div>
 </body>
 </html>
 
