@@ -4,6 +4,7 @@
     width:100%;
     left:auto;
     right:auto;
+    padding-bottom:100%;
 }
 
 #back-img,#front-img,#back-img-activate{
@@ -23,6 +24,7 @@
 }
 
 #status,#status-activate{
+    text-align:center;
     position:relative;
 }
 
