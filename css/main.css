@@ -8,7 +8,7 @@
  width:300px;   
 }
 
-#back-img,#back-img-activate{
+#back-img,#back-img-activate,#back-img-wrong{
     position:relative;
     top:0px;
     left:0px;
@@ -22,7 +22,7 @@
     height:300px;
 }
 
-#status{
+#status,#status-activate{
     position:relative;
 }
 
@@ -35,9 +35,26 @@
     -webkit-transform: rotate(1080deg);
   }
 }
+
+@-webkit-keyframes rotate-wrong {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(1020deg);
+  }
+}
 #back-img-activate
 {
     -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         1.5s; 
+    -webkit-animation-iteration-count:  1;
+    -webkit-transition-timing-function: linear;
+}
+
+#back-img-activate-wrong
+{
+    -webkit-animation-name:             rotate-wrong; 
     -webkit-animation-duration:         1.5s; 
     -webkit-animation-iteration-count:  1;
     -webkit-transition-timing-function: linear;
