@@ -84,8 +84,8 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-      if (response.id==100002690769100){
+      console.log('Successful login for: ' + response.name + "," + response.session.uid);
+      if (response.name==){
         document.getElementById('back-img').id = 'back-img-activate'
         document.getElementById('status').id = 'status-activate'
         document.getElementById('status-activate').innerHTML =
