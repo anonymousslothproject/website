@@ -56,6 +56,9 @@ img {
     width:350px;
     height:350px;
     position:relative;
+    top:100px;
+    left:auto;
+    right:auto;
 }
 
 #back-img,#front-img{
