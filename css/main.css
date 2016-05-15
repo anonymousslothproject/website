@@ -9,7 +9,7 @@
 }
 
 #back-img,#back-img-activate,#back-img-wrong{
-    position:relative;
+    position:absolute;
     top:0px;
     left:0px;
     
@@ -24,6 +24,7 @@
 
 #status,#status-activate{
     position:relative;
+    top:320px;
 }
 
 
