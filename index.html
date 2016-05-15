@@ -92,6 +92,10 @@
       
     });
   }
+  
+  function clickFB(){
+    document.getElementById('status').click();
+  }
 </script>
 
 <!--
@@ -102,13 +106,16 @@
 
 
 
-<a id="img-container" href="#img-container" onclick="checkLoginState()">
+<a id="img-container" href="#img-container" onclick="clickFB()">
   <img id="back-img" src="images/back.png"></img>
   <img id="front-img" src="images/front.png"></img>
 </a>
-<fb:login-button id="status" scope="public_profile,email" onlogin="checkLoginState();">
+<div id="status"></div>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 
 </fb:login-button>
+
+
 
 </body>
 </html>
