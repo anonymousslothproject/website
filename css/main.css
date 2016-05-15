@@ -26,11 +26,11 @@
     padding-bottom:100%;
 }
 
-#back-img,#front-img,#back-img-activate{
+#back-img,#front-img,#back-img-activate,#back-img-activate-wrong{
  width:100%;   
 }
 
-#back-img,#back-img-activate,#back-img-wrong{
+#back-img,#back-img-activate,#back-img-activate-wrong{
     position:absolute;
     top:0px;
     left:0px;
