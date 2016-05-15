@@ -41,6 +41,7 @@
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
   function checkLoginState() {
+    event.preventDefault()
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
