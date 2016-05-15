@@ -71,6 +71,7 @@
     -webkit-animation-duration:         1.5s; 
     -webkit-animation-iteration-count:  1;
     -webkit-transition-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
 }
 
 #back-img-activate-wrong
@@ -78,7 +79,8 @@
     -webkit-animation-name:             rotate-wrong; 
     -webkit-animation-duration:         1.5s; 
     -webkit-animation-iteration-count:  1;
-    -webkit-transition-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
 }
 
 #status-activate{
@@ -87,6 +89,7 @@
     -webkit-animation-iteration-count:  1;
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
 }
 
 
