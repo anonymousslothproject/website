@@ -34,11 +34,9 @@
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
   function checkLoginState() {
-    FB.login(FB.getLoginStatus(function(response) {
+    FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
-    );
-    
   }
 
   window.fbAsyncInit = function() {
@@ -102,10 +100,15 @@
   the FB.login() function when clicked.
 -->
 
-<a id="img-container" href="#img-container" onclick="checkLoginState()">
+<fb:login-button id="img-container" scope="public_profile,email" onlogin="checkLoginState();">
   <img id="back-img" src="images/back.png"></img>
   <img id="front-img" src="images/front.png"></img>
-</a>
+</fb:login-button>
+
+<!--<a id="img-container" href="#img-container" onclick="checkLoginState()">-->
+<!--  <img id="back-img" src="images/back.png"></img>-->
+<!--  <img id="front-img" src="images/front.png"></img>-->
+<!--</a>-->
 
 
 <div id="status">
