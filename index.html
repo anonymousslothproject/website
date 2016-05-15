@@ -94,7 +94,7 @@
   }
   
   function clickFB(){
-    document.getElementById('status').click();
+    document.getElementById('fb-button').click();
   }
 </script>
 
@@ -113,7 +113,7 @@
 
 <div class="table">
   <div class="centered">
-    <fb:login-button size="large" scope="public_profile,email" onlogin="checkLoginState();">
+    <fb:login-button id="fb-button" size="large" scope="public_profile,email" onlogin="checkLoginState();">
       登陆脸书，参加抽奖！
     </fb:login-button>
   </div>
