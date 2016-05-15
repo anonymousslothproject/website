@@ -43,7 +43,13 @@
   function checkLoginState() {
     event.preventDefault()
     FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
+      if(response.session){
+                         top.location.href="http://anonymousslothproject.github.io/website/";
+                    }
+                    else{
+                      statusChangeCallback(response);
+                     }
+                     console.log("session"+response.session);
     });
   }
 
