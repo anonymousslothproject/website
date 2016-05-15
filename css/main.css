@@ -44,6 +44,16 @@
 }
 
 #status-activate{
+    -webkit-animation-name:             fadein; 
+    -webkit-animation-duration:         0.1s; 
+    -webkit-animation-iteration-count:  1;
+    -webkit-transition-timing-function: linear;
     -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
     animation-delay: 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
