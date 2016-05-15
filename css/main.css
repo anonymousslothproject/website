@@ -54,10 +54,17 @@ img {
 }
 
 #img-container{
+    width:300px;
+    height:300px;
     position:relative;
 }
+
 #back-img,#front-img{
  width:300px;   
+}
+
+#status{
+    position:relative;
 }
 
 
