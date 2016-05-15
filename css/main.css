@@ -44,6 +44,6 @@
 }
 
 #status-activate{
-    -webkit-animation-delay: 1.6s; /* Chrome, Safari, Opera */
-    animation-delay: 1.6s;
+    -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
+    animation-delay: 2.5s;
 }
