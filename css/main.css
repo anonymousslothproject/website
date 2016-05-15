@@ -44,6 +44,10 @@
 }
 
 #status-activate{
+    opacity:0;
+}
+
+#status-activate{
     -webkit-animation-name:             fadein; 
     -webkit-animation-duration:         1s; 
     -webkit-animation-iteration-count:  1;
