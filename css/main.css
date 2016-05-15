@@ -64,10 +64,15 @@ img {
 
 #back-img{
     position:relative;
+    top:0px;
+    left:0px;
+    
 }
 
 #front-img{
     position:absolute;
+    top:0px;
+    left:0px;
 }
 
 #status{
