@@ -9,11 +9,16 @@
     display:table;
 }
 
+#container{
+    position:relative;
+    width:100%;
+    max-width:800px;
+}
+
 #img-container{
     position:relative;
     display:block;
     width:100%;
-    max-width:800px;
     margin-left:auto;
     margin-right:auto;
     left:auto;
