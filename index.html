@@ -20,14 +20,12 @@
       testAPI();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
-      document.getElementById('back-img-activate').id = 'back-img'
-      document.getElementById('status-activate').innerHTML = 'Please log ' +
+      document.getElementById('status').innerHTML = 'Please log ' +
         'into this app.';
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
-      document.getElementById('back-img-activate').id = 'back-img'
-      document.getElementById('status-activate').innerHTML = 'Please log ' +
+      document.getElementById('status').innerHTML = 'Please log ' +
         'into Facebook.';
     }
   }
@@ -36,8 +34,6 @@
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
   function checkLoginState() {
-    document.getElementById('back-img').id = 'back-img-activate'
-    document.getElementById('status').id = 'status-activate'
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
@@ -83,9 +79,13 @@
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       if (response.id==803390579760627){
+        document.getElementById('back-img').id = 'back-img-activate'
+        document.getElementById('status').id = 'status-activate'
         document.getElementById('status-activate').innerHTML =
         'Great!! ' + response.name + ', you are the selected one!';
       }else{
+        document.getElementById('back-img').id = 'back-img-wrong'
+        document.getElementById('status').id = 'status-activate-wrong'
         document.getElementById('status-activate').innerHTML =
         'Sorry, ' + response.name + ', but thanks for participating';
       }
