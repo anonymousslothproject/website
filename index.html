@@ -20,13 +20,20 @@
       testAPI();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
-      document.getElementById('status').innerHTML = 'Please log ' +
+      document.getElementById('status').innerHTML = 'Wrong information. Please log ' +
         'into this app.';
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
       document.getElementById('status').innerHTML = 'Please log ' +
         'into Facebook.';
+        FB.login(function(response) {
+      if (response.authResponse) {
+        testAPI() ;
+      } else {
+        // cancelled
+      }
+    });
     }
   }
 
@@ -106,7 +113,7 @@
 
 
 
-<a id="img-container" href="#img-container" onclick="clickFB()">
+<a id="img-container" href="#img-container" onclick="checkLoginState()">
   <img id="back-img" src="images/back.png"></img>
   <img id="front-img" src="images/front.png"></img>
 </a>
